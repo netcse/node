@@ -1,7 +1,12 @@
+// mongo ds031613.mongolab.com:31613/inventory -u netcse -p number1sakibkhan
+
 var mongo = require('mongodb');
 var express = require('express');
 var monk = require('monk');
-var db =  monk('localhost:27017/test');
+
+// var db = monk('localhost:27017');
+
+var db =  monk('mongodb://netcse:number1sakibkhan@ds31613.mongolab.com:31613/inventory');
 var app = new express();
 
 app.use(express.static(__dirname + '/public'));
