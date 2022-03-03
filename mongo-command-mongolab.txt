@@ -30,3 +30,5 @@ Import collection
 	mongoimport -h ds031613.mongolab.com:31613 -d inventory -c <collection> -u <user> -p <password> --file <input .csv file> --type csv --headerline
 Export collection
 	mongoexport -h ds031613.mongolab.com:31613 -d inventory -c <collection> -u <user> -p <password> -o <output .csv file> --csv -f <comma-separated list of field names>
+
+By Amran
